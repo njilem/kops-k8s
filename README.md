@@ -83,7 +83,7 @@ You Created. --> Save.
 	export NAME=class.k8s.local
 	export KOPS_STATE_STORE=s3://class29m
  
-    source .bashrc
+    source .bashrc   ----> this will refresh the .bashrc file
 	
 # 7) Create sshkeys before creating cluster
 
