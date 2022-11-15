@@ -43,7 +43,7 @@
 
  	#Install wget if not installed
  	sudo apt install wget -y
- 	sudo wget https://github.com/kubernetes/kops/releases/download/v1.25.2/kops-linux-amd64
+ 	sudo wget https://github.com/kubernetes/kops/releases/download/v1.22.0/kops-linux-amd64
  	sudo chmod +x kops-linux-amd64
  	sudo mv kops-linux-amd64 /usr/local/bin/kops
  
@@ -69,10 +69,10 @@ You Created. --> Save.
 # 6) create an S3 bucket
 # Execute the commands below in your KOPS control Server. use unique s3 bucket name. If you get bucket name exists error.
 
-	aws s3 mb s3://class29kkk
+	aws s3 mb s3://class29bbb
 	aws s3 ls
 	
-    ex: s3://class29kkk
+    ex: s3://class29bbb
      
 	Expose environment variable:
 
@@ -81,7 +81,7 @@ You Created. --> Save.
 	
 	# Give Unique Name And S3 Bucket which you created.
 	export NAME=class.k8s.local
-	export KOPS_STATE_STORE=s3://class29kkk
+	export KOPS_STATE_STORE=s3://class29bbb
  
     source .bashrc   ----> this will refresh the .bashrc file
 	
