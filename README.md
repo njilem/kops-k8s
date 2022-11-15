@@ -72,7 +72,7 @@ You Created. --> Save.
 	aws s3 mb s3://class29nb
 	aws s3 ls
 	
-    ex: s3://class29m
+    ex: s3://class29nb
      
 	Expose environment variable:
 
@@ -81,7 +81,7 @@ You Created. --> Save.
 	
 	# Give Unique Name And S3 Bucket which you created.
 	export NAME=class.k8s.local
-	export KOPS_STATE_STORE=s3://class29m
+	export KOPS_STATE_STORE=s3://class29nb
  
     source .bashrc   ----> this will refresh the .bashrc file
 	
